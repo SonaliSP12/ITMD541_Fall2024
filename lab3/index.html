@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form id="tipForm">
+        <h3>ITMD 541 Lab 3 Sonali Patel</h3>
+        <h1>Tip Calculator</h1>
+        <label for="billTotal">Bill Total ($):</label>
+        <input type="text" id="billTotal" name="billTotal" required>
+
+        <label for="tipPercentage">Tip:</label>
+        <input type="range" id="tipPercentage" name="tipPercentage" min="0" max="100" value="0">
+
+        <label for="tipPercentageDisplay">Tip Percentage:</label>
+        <input type="text" id="tipPercentageDisplay" name="tipPercentageDisplay" disabled>
+
+        <label for="tipAmount">Tip Amount :</label>
+        <input type="text" id="tipAmount" name="tipAmount" disabled>
+
+        <label for="totalWithTip">Total with Tip :</label>
+        <input type="text" id="totalWithTip" name="totalWithTip" disabled>
+
+        <label for="currency">Currency:</label>
+        <select id="currency" name="currency">
+            <option value="USD">USD ($)</option>
+            <option value="INR">INR (₹)</option>
+            <option value="JPY">JPY (¥)</option>
+        </select>
+
+        <div id="conversionRates">
+            <p>1 USD = 84.07 INR | 1 USD = 149.34 JPY </p>
+        </div>
+
+        <div id="errorMessage" class="error"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
