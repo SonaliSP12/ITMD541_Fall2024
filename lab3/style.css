@@ -78,7 +78,7 @@ select {
     width: calc(100% - 12px);
 }
 
-/* Further adjustments for very small screens */
+/* responsive design for very small screens */
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8em; 
